@@ -68,4 +68,19 @@
     nbproject/build-impl.xml file. 
 
     -->
+	<target name="build-war">
+
+   <war destfile="C:\Users\miracle\.jenkins\jobs\Java_Application_UCD\workspace\dist\Jenkins_Java_UCD.war" webxml="C:\Users\miracle\.jenkins\jobs\Java_Application_UCD\workspace\build\web\WEB-INF\web.xml">
+   <!--Give the WebContent folder path-->
+      <fileset dir="C:\Users\miracle\.jenkins\jobs\Java_Application_UCD\workspace\build\web">
+         <include name="**/*.*"/>
+      </fileset>
+      <!--Give the lib folder path-->
+      <lib dir="C:\Users\miracle\.jenkins\jobs\Java_Application_UCD\workspace\build\web\WEB-INF\lib">
+         
+      </lib>
+      <!--Give the classes folder path-->
+    
+   </war>
+</target>
 </project>
